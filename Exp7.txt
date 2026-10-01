@@ -1,0 +1,32 @@
+gradle -version
+gradle clean
+gradle build
+gradle run
+gradle tasks
+gradle jar
+// build.gradle
+plugins {
+    id 'application'
+}
+
+group = 'com.example'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = 'com.example.App'
+}
+settings.gradle
+rootProject.name = 'gradle-hello'
+
+// src/main/java/com/example/App.java
+package com.example;
+
+public class App {
+    public static void main(String[] args) {
+        System.out.println("Hello from Gradle!");
+    }
+}
